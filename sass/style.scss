@@ -4,3 +4,108 @@
 @import 'common';
 
 
+// HEADER
+header {
+    background: darken($grey, 10%) url(../img/header_bg.jpg) center top no-repeat;
+    background-size: cover;
+    min-height: 860px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 35px;
+    position: relative;
+
+    .m-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    li {
+        font-weight: $weight-bold;
+        line-height: 94px;
+        width: 20%;
+        float: left;
+    
+
+        a {
+            color: #fff;
+            padding: 15px 20px;
+
+            &:hover {
+                border-radius: 4px;
+                background-color: darken($grey, 20%);
+            } 
+        }
+    }
+
+    .logo {
+        border: 1px solid #fff;
+        padding: 15px 40px;
+        font-weight: $weight-norm;
+        cursor: pointer;
+        flex-basis: 220px;
+
+        a {
+            padding: 0;
+
+            &:hover {
+                color: #fff;
+                background-color: transparent;  
+            }
+        }
+
+        .name {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        
+        .desc {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+
+    h1 {
+        font-size: 72px;
+        font-weight: $weight-norm;
+        margin: 275px 0 0;
+        color: #fff;
+    }
+    
+    p {
+        font-size: 20px;
+        font-weight: $weight-mid;
+        margin-top: 32px;
+        color: #fff;
+    }
+
+    span {
+        color: $orange;
+    }
+
+    .btn {
+        padding: 25px 38px;
+        color: #fff;
+        margin-top: 58px;
+        font-size: 14px;
+    }
+    
+    .arrow {
+        position: absolute;
+        display: block;
+        width: 44px;
+        height: 109px;
+        top: calc(50% - 55px);
+    }
+    
+    .left {
+        background: url(../img/left_button.svg) center no-repeat;
+        left: 1%;
+    }
+
+    .right {
+        background: url(../img/right_button.svg) center no-repeat;
+        right: 1%;
+    }
+}    
